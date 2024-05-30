@@ -1,5 +1,5 @@
 <div align="center" >
-  <img width="85%" src="image/logo.png" />
+  <img width="50%" src="image/logo.png" />
 </div>
 
 # SFCircleProgressView

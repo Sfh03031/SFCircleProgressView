@@ -1,0 +1,6 @@
+framework module Pods_SFCircleProgressView_Example {
+  umbrella header "Pods-SFCircleProgressView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

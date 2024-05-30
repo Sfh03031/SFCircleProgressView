@@ -1,0 +1,6 @@
+framework module SFCircleProgressView {
+  umbrella header "SFCircleProgressView-umbrella.h"
+
+  export *
+  module * { export * }
+}

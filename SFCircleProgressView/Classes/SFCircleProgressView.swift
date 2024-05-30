@@ -9,8 +9,8 @@ import UIKit
 
 public class SFCircleProgressView: UIView {
     
-    /// 进度 0~1
-    @IBInspectable public var progress: CGFloat = 0 {
+    /// 进度 0.0 ~ 1.0
+    @IBInspectable public var progress: CGFloat = 0.0 {
         didSet {
             if progress <= 1.0 && progress >= 0.0 {
                 circleView.progress = progress

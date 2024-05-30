@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/SparkeXHApp/SFCircleProgressView'
+  s.homepage         = 'https://github.com/Sfh03031/SFCircleProgressView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'SparkeXHApp' => 'sfhery@foxmail.com' }
-  s.source           = { :git => 'https://github.com/SparkeXHApp/SFCircleProgressView.git', :tag => s.version.to_s }
+  s.author           = { 'SparkeXHApp' => 'sfh894645252@163.com' }
+  s.source           = { :git => 'https://github.com/Sfh03031/SFCircleProgressView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'

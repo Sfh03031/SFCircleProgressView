@@ -31,12 +31,12 @@ class ViewController: UIViewController {
         let v = SFCircleProgressView()
         v.frame = CGRect(x: (UIScreen.main.bounds.width - 300) / 2, y: 200, width: 300, height: 300)
         v.progress = 0
-        v.lineWith = 50.0
+        v.lineWith = 30.0
         v.lineColor = .lightGray
         v.proLineWith = 20.0
         v.proColors = [UIColor.red.cgColor, UIColor.yellow.cgColor]
         v.textColor = .red
-        v.textFont = UIFont.systemFont(ofSize: 20, weight: .bold)
+        v.textFont = UIFont.systemFont(ofSize: 30, weight: .bold)
         return v
     }()
     

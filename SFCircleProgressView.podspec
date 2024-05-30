@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/Sfh03031/SFCircleProgressView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'SparkeXHApp' => 'sfh894645252@163.com' }
+  s.author           = { 'Sfh03031' => 'sfh894645252@163.com' }
   s.source           = { :git => 'https://github.com/Sfh03031/SFCircleProgressView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

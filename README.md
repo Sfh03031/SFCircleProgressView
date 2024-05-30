@@ -38,7 +38,7 @@ pod 'SFCircleProgressView', :git => 'https://github.com/Sfh03031/SFCircleProgres
 
 ## Author
 
-SparkeXHApp, sfhery@foxmail.com
+  Sfh03031, sfh894645252@163.com
 
 ## License
 

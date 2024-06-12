@@ -27,6 +27,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+* iOS 12.0 or later
+* Swift 5.9.2
+* Xcode 15.1
+
 ## Installation
 
 SFCircleProgressView is available through [CocoaPods](https://cocoapods.org). To install

@@ -7,10 +7,11 @@
 
 import UIKit
 
-public class SFCircleProgressView: UIView {
+@IBDesignable
+open class SFCircleProgressView: UIView {
     
     /// 进度 0.0 ~ 1.0
-    @IBInspectable public var progress: CGFloat = 0.0 {
+    @IBInspectable open var progress: CGFloat = 0.0 {
         didSet {
             if progress <= 1.0 && progress >= 0.0 {
                 circleView.progress = progress
@@ -21,35 +22,35 @@ public class SFCircleProgressView: UIView {
     }
     
     /// 背景线宽
-    @IBInspectable public var lineWith: CGFloat = 2.0 {
+    @IBInspectable open var lineWith: CGFloat = 2.0 {
         didSet {
             circleView.lineWith = lineWith
         }
     }
     
     /// 背景线色
-    @IBInspectable public var lineColor: UIColor = .blue{
+    @IBInspectable open var lineColor: UIColor = .blue{
         didSet {
             circleView.lineColor = lineColor
         }
     }
     
     /// 进度线宽
-    @IBInspectable public var proLineWith: CGFloat = 2.0 {
+    @IBInspectable open var proLineWith: CGFloat = 2.0 {
         didSet {
             circleView.proLineWith = proLineWith
         }
     }
     
     /// 进度线色，支持渐变
-    @IBInspectable public var proColors: [Any] = [UIColor.red.cgColor, UIColor.systemTeal.cgColor]{
+    @IBInspectable open var proColors: [Any] = [UIColor.red.cgColor, UIColor.systemTeal.cgColor]{
         didSet {
             circleView.proColors = proColors
         }
     }
     
     /// 文字内容
-    @IBInspectable public var text: String = "" {
+    @IBInspectable open var text: String = "" {
         didSet {
             alphaLabel.text = text
             alphaLabel.sizeToFit()
@@ -57,14 +58,14 @@ public class SFCircleProgressView: UIView {
     }
     
     /// 文字颜色
-    @IBInspectable public var textColor: UIColor = .blue {
+    @IBInspectable open var textColor: UIColor = .blue {
         didSet {
             alphaLabel.textColor = textColor
         }
     }
     
     /// 文字字体
-    @IBInspectable public var textFont: UIFont = UIFont.systemFont(ofSize: 12, weight: .medium) {
+    @IBInspectable open var textFont: UIFont = UIFont.systemFont(ofSize: 12, weight: .medium) {
         didSet {
             alphaLabel.font = textFont
         }
@@ -75,7 +76,7 @@ public class SFCircleProgressView: UIView {
         self.backgroundColor = #colorLiteral(red: 0.9687491059, green: 0.9721953273, blue: 0.9813622832, alpha: 1)
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -88,7 +89,7 @@ public class SFCircleProgressView: UIView {
         loadViews()
     }
     
-    func loadViews() {
+    internal func loadViews() {
         self.addSubview(circleView)
         self.addSubview(alphaLabel)
         
@@ -99,7 +100,7 @@ public class SFCircleProgressView: UIView {
     
     //MARK: - lazyload
     
-    lazy var circleView: SFCircleView = {
+    fileprivate lazy var circleView: SFCircleView = {
         let circle = SFCircleView()
         circle.lineWith = 2.0
         circle.lineColor = #colorLiteral(red: 0, green: 0.6233735085, blue: 1, alpha: 1)
@@ -107,7 +108,7 @@ public class SFCircleProgressView: UIView {
         return circle
     }()
     
-    lazy var alphaLabel: UILabel = {
+    fileprivate lazy var alphaLabel: UILabel = {
         let label = UILabel()
         label.text = "0%"
         label.textColor = #colorLiteral(red: 0, green: 0.6233735085, blue: 1, alpha: 1)

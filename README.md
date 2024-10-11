@@ -37,6 +37,11 @@ SFCircleProgressView is available through [CocoaPods](https://cocoapods.org). To
 it, simply add the following line to your Podfile:
 
 ```ruby
+pod 'SFCircleProgressView'
+```
+If you want to use the latest features of SFStyleKit use normal external source dependencies.
+
+```ruby
 pod 'SFCircleProgressView', :git => 'https://github.com/Sfh03031/SFCircleProgressView.git'
 ```
 

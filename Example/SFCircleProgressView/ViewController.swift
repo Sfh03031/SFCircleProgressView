@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         v.lineWith = 30.0
         v.lineColor = .lightGray
         v.proLineWith = 20.0
-        v.proColors = [UIColor.red.cgColor, UIColor.yellow.cgColor]
+        v.proColors = [UIColor.red.cgColor, UIColor.yellow.cgColor, UIColor.systemTeal.cgColor]
         v.textColor = .red
         v.textFont = UIFont.systemFont(ofSize: 30, weight: .bold)
         return v

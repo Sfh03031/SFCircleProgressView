@@ -7,10 +7,11 @@
 
 import UIKit
 
-public class SFCircleView: UIView {
+@IBDesignable
+open class SFCircleView: UIView {
 
     /// 进度
-    @IBInspectable public var progress: CGFloat = 0.0 {
+    @IBInspectable open var progress: CGFloat = 0.0 {
         didSet {
             progressLayer.strokeEnd = progress
             progressLayer.removeAllAnimations()
@@ -18,14 +19,14 @@ public class SFCircleView: UIView {
     }
     
     /// 背景线宽
-    @IBInspectable public var lineWith: CGFloat = 2.0
+    @IBInspectable open var lineWith: CGFloat = 2.0
     /// 背景线色
-    @IBInspectable public var lineColor: UIColor = .blue
+    @IBInspectable open var lineColor: UIColor = .blue
     
     /// 进度线宽
-    @IBInspectable public var proLineWith: CGFloat = 2.0
+    @IBInspectable open var proLineWith: CGFloat = 2.0
     /// 进度线色
-    @IBInspectable public var proColors: [Any] = [UIColor.red.cgColor, UIColor.systemTeal.cgColor]
+    @IBInspectable open var proColors: [Any] = [UIColor.red.cgColor, UIColor.systemTeal.cgColor]
     
     fileprivate var progressLayer: CAShapeLayer = CAShapeLayer()
     
@@ -35,7 +36,7 @@ public class SFCircleView: UIView {
         //self.bounds在这里取不到
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -45,7 +46,7 @@ public class SFCircleView: UIView {
         loadViews()
     }
     
-    func loadViews() {
+   internal  func loadViews() {
         let centerX = self.bounds.width / 2
         let centerY = self.bounds.height / 2
         

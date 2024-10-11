@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 @IBDesignable
 open class SFCircleView: UIView {
@@ -46,7 +47,7 @@ open class SFCircleView: UIView {
         loadViews()
     }
     
-   internal  func loadViews() {
+    internal func loadViews() {
         let centerX = self.bounds.width / 2
         let centerY = self.bounds.height / 2
         

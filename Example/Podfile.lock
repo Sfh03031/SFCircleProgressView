@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SFCircleProgressView (0.1.0)
+  - SFCircleProgressView (0.1.2)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SFCircleProgressView: 744b1ef701d6a9c25754b1d9339237d1a596af83
+  SFCircleProgressView: 5578cd33d471868bd3b16b80022dd66e613d6ce1
 
-PODFILE CHECKSUM: 994af780fcd983d771249c0d1f16c88f81eda846
+PODFILE CHECKSUM: 66a1221e50047472459faf9bccb30b3e8b412902
 
 COCOAPODS: 1.13.0

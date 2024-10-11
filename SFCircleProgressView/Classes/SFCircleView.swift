@@ -69,7 +69,7 @@ open class SFCircleView: UIView {
         progressLayer.fillColor = UIColor.clear.cgColor
         progressLayer.strokeColor = lineColor.cgColor
         progressLayer.lineWidth = proLineWith
-        progressLayer.lineCap = kCALineCapRound
+        progressLayer.lineCap = .round
         progressLayer.path = path.cgPath
         progressLayer.strokeEnd = progress
         
